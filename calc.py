@@ -18,3 +18,5 @@ def divide(x, y):
     """Divide Function"""
 
     return x / y
+
+# print(add(10, 10))
