@@ -21,6 +21,16 @@ class TestCalc(unittest.TestCase):
         self.assertEqual(calc.divide(-88, 88), -1)
         self.assertEqual(calc.divide(2, 2), 1)
 
+        # self.assertRaises(ValueError, calc.divide, 10, 0)
+
+        with self.assertRaises(ValueError):
+            n = 10
+            l = 0
+            calc.divide(n, l)
+
+        with self.assertRaises(ValueError):
+            calc.divide(99999, 0)
+
     def test_multiply(self):
         self.assertEqual(calc.multiply(10, 5), 50)
         self.assertEqual(calc.multiply(100, 1), 100)

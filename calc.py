@@ -3,7 +3,7 @@ def add(x, y):
     """Add Function"""
 
     return x + y
-
+    
 def subtract(x, y):
     """Subtract Function"""
 
@@ -18,7 +18,7 @@ def divide(x, y):
     """Divide Function"""
 
     if y == 0:
-        return ValueError('you cannot divide by zero!')
+        raise ValueError('you cannot divide by zero!')
 
     return x / y
 
